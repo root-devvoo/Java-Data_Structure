@@ -4,4 +4,4 @@
 
 ---
 
-- 제1-1장: [변수, 배열, 반복문](https://github.com/iceman-brandon/Java-Data_Structure/tree/main/Lesson01/src)
+- 제1-1장: [변수, 배열, 반복문](https://github.com/iceman-brandon/Java-Data_Structure/tree/main/Chapter1/src)
