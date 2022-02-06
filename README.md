@@ -1,6 +1,6 @@
 # Java-Data_Structure
 
-인프런 : Java로 배우는 자료구조_권오흠 강사
+인프런 : Java로 배우는 자료구조_권오흠 교수
 
 ---
 
