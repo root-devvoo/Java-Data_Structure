@@ -26,7 +26,7 @@
 
 ### 참조 변수
 
-모든 프리미티브 타입의 변수는 <u>보통 변수</u>이다.<br>즉, 변수 자체에 값이 저장된다.
+모든 프리미티브 타입의 변수는 <u>보통 변수</u>이다.<br>즉, 변수 자체에 값이 저장된다.<br>(프리미티브 타입은 프로그래밍 언어 자체가 제공해주는 타입)
 
 **프리미티브 타입이 아닌 모든 변수는 <u>참조 변수</u>이다.**<br>즉, 실제 데이터가 저장될 "객체"는 new 명령으로 따로 만들어야 하고,<br>참조변수에는 그 객체의 주소를 저장한다.
 
@@ -69,3 +69,63 @@ int는 프리미티브 타입이지만, int배열은 프리미티브 타입이 �
 ### Code02.java
 
 ![image](https://user-images.githubusercontent.com/78403443/152797117-f2054563-cc13-4553-b7ab-73326333970e.png)
+
+### Code03.java
+
+![image](https://user-images.githubusercontent.com/78403443/152904116-8dba988f-f7ae-4882-ae02-8f70cdabfb4e.png)
+
+![image](https://user-images.githubusercontent.com/78403443/152906526-9855679b-c5c2-4462-96c3-503aba283020.png)
+
+### 클래스, 참조변수, 객체
+
+![image](https://user-images.githubusercontent.com/78403443/152907519-7f8c2ea9-8e79-4ee9-9abd-2afb496fa72d.png)
+
+![image](https://user-images.githubusercontent.com/78403443/152908453-2eea2522-9ce3-4e0b-b5e1-89842c0c247b.png)
+
+**(프리미티브 타입은 프로그래밍 언어 자체가 제공해주는 타입이다)**
+
+### 인덱스 메이커 프로그램의 수정
+
+![image](https://user-images.githubusercontent.com/78403443/152908594-d2d1ec18-cc9d-4301-884a-f424da82e31a.png)
+
+---
+
+## (4/5 ~)
+
+### 사각형의 면적
+
+![image](https://user-images.githubusercontent.com/78403443/152913775-6902cc28-28e4-4675-9442-39c8c13ebe56.png)
+
+이런 종류의 프로그램을 작성한다면 가장 먼저 할 일은 평면상에서 하나의 점을 정의하는 클래스를 작성하는 것에서부터 시작. (MyPoint1.java)
+
+그 다음에 할 일은 우리가 다루는 데이터가 여러개의 직사각형들을 다루는 거니까 이 하나의 직사각형을 표현하기 위한 클래스도 만들어둔다. (MyRectangle1.java)
+
+이 2개의 클래스를 이용해서 직사각형들을 입력받은 후에 면적에 대해서 정렬을 해서 출력하는 프로그램을 Code05 라는 이름으로 만들어본다.
+
+![image](https://user-images.githubusercontent.com/78403443/152914668-ffb2c4df-c351-4d15-924e-3d4db778beea.png)
+
+입력은 데이터 파일(data.txt)로부터 받는다.
+
+### 다항함수
+
+![image](https://user-images.githubusercontent.com/78403443/152948213-e787a774-bdbb-42a1-a0a8-5aee4eed5333.png)
+
+![image](https://user-images.githubusercontent.com/78403443/152949034-329cd913-f4d5-4402-9e88-875778c3487d.png)
+
+항들이 여러개 모여서 하나의 다항함수가 만들어지는거니까 다항함수에 들어가는 "하나의 항을 어떻게 표현하는가" 부터 시작하면 된다.
+
+![image](https://user-images.githubusercontent.com/78403443/152949404-e41f423f-b997-4888-8c87-12a9dcfb8137.png)
+
+![image](https://user-images.githubusercontent.com/78403443/152950023-651cc935-ba87-43a1-ae7b-4dff273ee22c.png)
+
+그리고 Code06.java에 만든다.
+
+![image](https://user-images.githubusercontent.com/78403443/152956427-c8e3969d-d166-4c22-9ea9-7206d72dbc59.png)
+
+우리가 어떤 다항식에 새로운 항을 하나 추가할 때 예를 들면, 내가 이 다항식에 5x<sup>3</sup>이라는 항을 추가하려고 하는데, 일단 기본적으로는 2가지 케이스를 나누어서 생각해야된다. 
+
+첫번째는 지금 현재 이 다항식에 이미 예를 들면, -3x<sup>3</sup> 이런식으로 이미 엑스(x) 3승짜리 항이 만약에 있다면 그 경우에는 사실은 그냥 계수끼리 더해주기만 하면 된다. 새로운 항을 추가하거나 할 필요없이 -3x<sup>3</sup> +  5x<sup>3</sup> = 2x<sup>3</sup> 이니까 계수 값만 수정해주면 된다.
+
+그런데, 원래 다항식에 이렇게 3차 항이 없다면, 그때는 새로운 항이 하나 더 추가되어야 되겠다.
+
+그래서 이렇게 2가지 경우로 일단 먼저 나누어서 생각을 해야된다.
