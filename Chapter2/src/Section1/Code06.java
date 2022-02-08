@@ -52,7 +52,7 @@ public class Code06 {
 					System.out.println("No such polynomial exists.");
 				}
 				else {
-					printPolynomal(polys[index]);
+					printPolynomial(polys[index]);
 				}
 			}
 			else if (command.equals("exit"))
@@ -77,7 +77,7 @@ public class Code06 {
 		// pow는 double형으로 반환하는데 여기서 int로 반환하도록 설정했으니까 int형으로 캐스팅(형변환)
 	}
 
-	private static void printPolynomal(Polynomial p) { // 다항식을 출력하는 함수
+	private static void printPolynomial(Polynomial p) { // 다항식을 출력하는 함수
 		for (int i=0; i<p.nTerms; i++) {
 			printTerm(p.terms[i]);
 			System.out.print("+"); // (이 부분 스스로 수정하기)
