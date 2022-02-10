@@ -10,3 +10,4 @@
 ---
 - 제2-1장: [클래스, 객체, 참조변수](https://github.com/iceman-brandon/Java-Data_Structure/tree/main/Chapter2/src/Section1)
 - 제2-2장: [메서드와 생성자](https://github.com/iceman-brandon/Java-Data_Structure/tree/main/Chapter2/src/section2)
+- 제2-3장: [static 그리고 public](https://github.com/iceman-brandon/Java-Data_Structure/tree/main/Chapter2/src/section3)
